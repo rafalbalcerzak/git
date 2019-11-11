@@ -2,6 +2,7 @@
 #include "complex.h"
 using namespace std;
 
+//główna pętla
 int main(){
 	Complex c1(2,3);
 	Complex c2(4,7);
