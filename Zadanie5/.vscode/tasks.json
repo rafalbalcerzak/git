@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build hello world",
+      "type": "shell",
+      "command": "g++",
+      //ctrl+shift+b
+      "args": ["-g", "-o", "main", "main.cpp", "complex.cpp"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
