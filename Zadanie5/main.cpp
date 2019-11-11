@@ -33,6 +33,6 @@ int main(){
 	cout<<"Modul z c1:"<<endl;
 	cout<<c1.mod()<<endl;
 
-	//cout<<"wynik:"<<c3<<endl;
+	//cout<<"wynik:"<<c3<<endl; test
 	return 0;
 }
