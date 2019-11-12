@@ -20,15 +20,15 @@ int main(){
 	c5.show();
 
 	cout<<"Dodawanie:"<<endl;
-	c3 = c1+c2;
+	c3 = c1 + c2;
 	c3.show();
 
 	cout<<"Odejmowanie:"<<endl;
-	c3 = c1-c2;
+	c3 = c1 - c2;
 	c3.show();
 
 	cout<<"Mnozenie:"<<endl;
-	c3 = c1*c2;
+	c3 = c1 * c2;
 	c3.show();
 
 	cout<<"Modul z c1:"<<endl;

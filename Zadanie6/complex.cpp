@@ -27,30 +27,30 @@ void Complex::show(){
 //modul z liczby zespolonej
 double Complex::mod(){
     double res;
-    res=sqrt((re*re)+(im*im));
+    res = sqrt((re * re) + (im * im));
     return res;
 };
 
 //przeciążanie operatorów
 Complex operator+(Complex c1, Complex c2){
     Complex res(0,0);
-    res.re=c1.re+c2.re;
-    res.im=c1.im+c2.im;
+    res.re = c1.re + c2.re;
+    res.im = c1.im + c2.im;
     return res;
 };
 
 //przeciążanie operatorów
 Complex operator-(Complex c1, Complex c2){
     Complex res(0,0);
-    res.re=c1.re-c2.re;
-    res.im=c1.im-c2.im;
+    res.re = c1.re - c2.re;
+    res.im = c1.im - c2.im;
     return res;
 };
 
 //przeciążanie operatorów
 Complex operator*(Complex c1, Complex c2){
     Complex res(0,0);
-    res.re=(c1.re*c2.re)-(c1.im*c2.im);
-    res.im=(c1.re*c2.im)+(c1.im*c2.re);
+    res.re = (c1.re * c2.re) - (c1.im * c2.im);
+    res.im = (c1.re * c2.im) + (c1.im * c2.re);
     return res;
 }; 
