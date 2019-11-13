@@ -6,7 +6,7 @@
       "type": "shell",
       "command": "g++",
       //ctrl+shift+b
-      "args": ["-g", "-o", "main", "main.cpp", "complex.cpp"],
+      "args": ["-g", "-o", "main", "main.cpp"],
       "group": {
         "kind": "build",
         "isDefault": true
