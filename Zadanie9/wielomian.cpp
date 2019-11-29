@@ -14,13 +14,19 @@ double&Wielomian::operator[](int pos){
 void Wielomian::pokaz(){
     for(int i = 0; i < v.size(); i++){
         
-        cout<<v[v.size()-1-i]<<"x^"<<v.size()-1-i;
+        cout<<v[v.size()-1-i];
 
         if(i == v.size()-1){
              cout<<endl;
         }
         else{   
-             cout<<"+";
+            if((v.size()-1-i) == 1){
+                cout<<"x+";
+            }
+
+            else{
+                cout<<"x^"<<v.size()-1-i<<"+";
+            }
         }
     }
     cout<<endl;
