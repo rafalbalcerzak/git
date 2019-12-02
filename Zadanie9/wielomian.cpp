@@ -74,6 +74,25 @@ int Wielomian::mySize(){
     int size = v.size();
     return size;
 }
+//obliczanie wielomianu dla danego x
+double Wielomian::oblicz(double x){
+    double res;
+    
+    for(int i = 0; i < v.size(); i++){
+        //i to wykładnik
+        //x to podstawa
+        //v[i] to mnożnie przed x^coś
+        int wynik = 1;   
+        for (int b = 0; b<i; b++){
+            wynik*=x;
+        }
+        res += v[i]*wynik ;
+    
+    }
+
+    return res;
+
+}
 
 //operator który powiększa tablice jeśli jest za mała
 double&Wielomian::operator[](int pos){

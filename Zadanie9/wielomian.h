@@ -7,7 +7,8 @@ public:
     void pokaz();
     void pokazOld();
     int mySize();
-    
+    double oblicz(double x);
+
     friend Wielomian operator+(Wielomian a, Wielomian b);
     friend Wielomian operator-(Wielomian a, Wielomian b);
     friend Wielomian operator*(Wielomian a, Wielomian b);
