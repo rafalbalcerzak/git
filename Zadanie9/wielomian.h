@@ -12,4 +12,5 @@ public:
     friend Wielomian operator+(Wielomian a, Wielomian b);
     friend Wielomian operator-(Wielomian a, Wielomian b);
     friend Wielomian operator*(Wielomian a, Wielomian b);
+    friend bool operator==(const Wielomian b, const Wielomian a);
 };

@@ -82,11 +82,11 @@ double Wielomian::oblicz(double x){
         //i to wykładnik
         //x to podstawa
         //v[i] to mnożnie przed x^coś
-        int wynik = 1;   
-        for (int b = 0; b<i; b++){
-            wynik*=x;
+        int potega = 1;   
+        for (int b = 0; b < i; b++){
+            potega*=x;
         }
-        res += v[i]*wynik ;
+        res += v[i]*potega ;
     
     }
 
@@ -154,3 +154,23 @@ Wielomian operator*(Wielomian a, Wielomian b){
 
     return res;
 };
+
+//operator porównania
+bool operator==(Wielomian a,Wielomian b){
+    if(b.v.size() == a.v.size()){
+        //napisać pętle for która sprawdza czy wszystkie liczby przed odpowiednimi wyrazami wielomianu sa takiesame
+        
+        for (int i = 0; i < b.v.size(); i++)
+        {
+            if(a[i]!=b[i]){
+                return false;
+            }
+
+        }
+        return true;
+    }else{
+        cout<<"Wielomiany nie sa tego samego stopnia!"<<endl;
+        return false;
+    }
+   
+}
