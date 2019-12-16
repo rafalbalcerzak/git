@@ -17,6 +17,8 @@ class Punkt
 	void pokaz();
 
 	friend Punkt operator*(Punkt p1, Punkt p2);
+	friend bool operator==(Punkt p1, Punkt p2);
+	friend bool operator!=(Punkt p1, Punkt p2);
 };
 
 Punkt::Punkt(){
@@ -74,6 +76,17 @@ Punkt operator*(Punkt p1, Punkt p2){
 	return res;
 }
 
+bool operator==(Punkt p1, Punkt p2){
+	if(p1.x == p2.x && p1.y == p2.y && p1.z == p2.z){
+		return true;
+	}
+	return false;
+}
+
+bool operator!=(Punkt p1, Punkt p2){
+	return !(p1 == p2);
+}
+
 //uwaga, funkcji main nie należy zmieniac, można jedynie wykomentowywac linie kodu
 int main()
 {
@@ -96,5 +109,7 @@ p1=p2*p3;
 //wspolrzednych z punktów podanych jako argumenty
 
 p1.pokaz();
- return 0;
+if (p1 == p2){cout<<"Punkty sa takie same"<<endl;};
+if (p1 != p2){cout<<"Punkty sa rozne"<<endl;};
+return 0;
 } 
