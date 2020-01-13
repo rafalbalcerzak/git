@@ -8,11 +8,11 @@ class Podatnik
  double koszt;
 
  public:
-    Podatnik(int nipset);
-    Podatnik(int nipset, double przychodset, double kosztset);
+    Podatnik(int nip_set);
+    Podatnik(int nip_set, double przychod_set, double koszt_set);
 
     void pokaz();
-    void ustaw_dane(double przychodset, double kosztset);
+    void ustaw_dane(double przychod_set, double koszt_set);
 
     double przychod_w_euro(double kurs);
     double podatek();
@@ -22,16 +22,16 @@ class Podatnik
 };
 //uzupelnij…
 
-Podatnik::Podatnik(int nipset){
-    nip = nipset;
+Podatnik::Podatnik(int nip_set){
+    nip = nip_set;
     przychod = 0;
     koszt =0;
 }
 
-Podatnik::Podatnik(int nipset, double przychodset, double kosztset){
-    nip = nipset;
-    przychod = przychodset;
-    koszt = kosztset;
+Podatnik::Podatnik(int nip_set, double przychod_set, double koszt_set){
+    nip = nip_set;
+    przychod = przychod_set;
+    koszt = koszt_set;
 }
 
 void Podatnik::pokaz(){
@@ -40,9 +40,9 @@ void Podatnik::pokaz(){
     cout<<"koszt: "<<koszt<<endl<<endl;
 }
 
-void Podatnik::ustaw_dane(double przychodset, double kosztset){
-    przychod = przychodset;
-    koszt = kosztset;
+void Podatnik::ustaw_dane(double przychod_set, double koszt_set){
+    przychod = przychod_set;
+    koszt = koszt_set;
 }
 
 double Podatnik::przychod_w_euro(double kurs){
